@@ -1,0 +1,16 @@
+pandas-datareader
+yfinance
+quandl
+wbdata
+pandas
+numpy
+statsmodels
+scipy
+prophet
+pmdarima
+matplotlib
+seaborn
+plotly
+scikit-learn
+tensorflow
+torch
