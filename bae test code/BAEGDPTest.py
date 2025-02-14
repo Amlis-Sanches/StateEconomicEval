@@ -18,6 +18,15 @@ beakey = config.get('economicmodle keys','beaapi')
 
 del config
 
-# Create the connection object
-list_of_sets = beaapi.get_data_set_list(beakey)
-display(list_of_sets)
+gdp_data = beaapi.get_data(
+    beakey,
+    datasetname="Regional",
+    TableName="SQGDP2",
+    GeoFips="STATE",
+    Year="2023",
+    LineCode="1",  # This is REQUIRED
+    ResultFormat="JSON"
+)
+
+print(gdp_data)
+
