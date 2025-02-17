@@ -1,11 +1,3 @@
-CREATE TABLE IF NOT EXISTS StateGDP (
-    "id" INTEGER,
-    "Stateid" INTEGER,
-    "GDP" INTEGER,
-    "Year" INTEGER,
-    PRIMARY KEY("id")
-);
-
 CREATE TABLE IF NOT EXISTS States (
     "id" INTEGER,
     "State_Name" TEXT,
@@ -29,9 +21,7 @@ CREATE TABLE IF NOT EXISTS ZipCode(
     "ZipCode" INTEGER,
     "Zone_id" INTEGER,
     FOREIGN KEY ("Zone_id") REFERENCES Zones("id")
-
-)
-
+);
 
 CREATE TABLE Population (
     "State_Zone_id" INTEGER,
