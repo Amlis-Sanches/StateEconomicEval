@@ -23,7 +23,7 @@ gdp_data = beaapi.get_data(
     datasetname="Regional",
     TableName="SQGDP2",
     GeoFips="STATE",
-    Year="2023",
+    Year="ALL",
     LineCode="1",  # This is REQUIRED
     ResultFormat="JSON"
 )
